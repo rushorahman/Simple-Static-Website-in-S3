@@ -1,0 +1,48 @@
+S3 static website
+
+Step 1 : Creating Bucket
+
+1.Log into AWS console
+2.navigate to s3
+3.Click on create bucket (Globally unique name)
+4.Select region 
+4.Leave options as default
+5.Uncheck block all public access restrictions to make your bucket public
+6.Click Next
+7.Create Bucket
+
+Step : 2 Uploads .html files to bucket
+
+1. Select Bucket 
+2. Click upload
+3. Add files ( (index.html and error.html)
+4. Click upload
+
+Step 3 : Enable static website
+
+1. Click the bucket
+2. navigate to properties > static web hosting
+3. Select "Use this bucket to host a website"
+4. for index document, enter index.html 
+5. For errordocument, enter error.html
+6.  Click save
+
+Step 4: 
+
+1. Navigate to Permissions > Bucket policy.
+2. Add the following JSON statement (replace default ARN with your ARN name):
+
+{
+  "Version":"2012-10-17",
+  "Statement":[{
+	"Sid":"PublicReadGetObject",
+        "Effect":"Allow",
+	  "Principal": "*",
+      "Action":["s3:GetObject"],
+      "Resource":["arn:aws:s3:::example-bucket/*"
+      ]
+    }
+  ]
+}
+
+Ensure the trailing /* is present so that the policy applies to all objects within the bucket.
