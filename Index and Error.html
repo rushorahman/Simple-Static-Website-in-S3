@@ -1,0 +1,26 @@
+copy and paste these code separately in notepad and save using .html at the end 
+
+
+Index.html :
+
+<h4>I am a:</h4>
+<button onClick=showDogContent()>Dog</button>
+<button onClick=showCatContent()>Cat</button>
+<h1 id="content"></h1>
+<script>
+  const contentEl = document.getElementById("content")
+  const dogContent = "Woof Woof Woof"
+  const catContent = "Meow Meow Meow"
+  function showDogContent() {
+    contentEl.innerHTML = dogContent
+  }
+  function showCatContent() {
+    contentEl.innerHTML = catContent
+  }
+</script>
+
+
+
+Error.html:
+
+<h1>Whoops</h1>
