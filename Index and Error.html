@@ -1,21 +1,19 @@
 Copy and paste these codes separately in notepad and save using .html at the end instead of .txt
 
 
-Index.html :
-
-<h4>I am a:</h4>
-<button onClick=showDogContent()>Dog</button>
-<button onClick=showCatContent()>Cat</button>
+<H4>I am a:</h4>
+<button onClick=showHumanContent()>Human</button>
+<button onClick=showRobotContent()>Robot</button>
 <h1 id="content"></h1>
 <script>
   const contentEl = document.getElementById("content")
-  const dogContent = "Woof Woof Woof"
-  const catContent = "Meow Meow Meow"
-  function showDogContent() {
-    contentEl.innerHTML = dogContent
+  const HumanContent = "Hi!How are you today?"
+  const RobotContent = "01101000 01101001 00100001"
+  function showHumanContent() {
+    contentEl.innerHTML = HumanContent
   }
-  function showCatContent() {
-    contentEl.innerHTML = catContent
+  function showRobotContent() {
+    contentEl.innerHTML = RobotContent
   }
 </script>
 
@@ -23,4 +21,4 @@ Index.html :
 
 Error.html:
 
-<h1>Whoops</h1>
+<h1>Error loading page, no page exist</h1>
