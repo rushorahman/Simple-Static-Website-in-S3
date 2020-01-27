@@ -46,3 +46,10 @@ Step 4:
 }
 
 Ensure the trailing /* is present so that the policy applies to all objects within the bucket.
+
+Step 5 : Verify
+
+1. Go to your bucket properties
+2.Click on Static website hosting
+3. Copy and paste the endpoint (exmaple- http://yourbucket.s3-website-us-east-1.amazonaws.com) in a new browser tab
+4. It should show the public website that user just created.
