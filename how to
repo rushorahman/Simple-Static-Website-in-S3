@@ -15,7 +15,7 @@ Step : 2 Uploads .html files to bucket
 
 1. Select Bucket 
 2. Click upload
-3. Add files ( (index.html and error.html)
+3. Add files (index.html and error.html)
 4. Click upload
 
 Step 3 : Enable static website
