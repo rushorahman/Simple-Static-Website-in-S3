@@ -24,7 +24,7 @@ Step 3 : Enable static website
 2. navigate to properties > static web hosting
 3. Select "Use this bucket to host a website"
 4. for index document, enter index.html 
-5. For errordocument, enter error.html
+5. For error document, enter error.html
 6. Click save
 
 Step 4: 
